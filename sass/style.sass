@@ -1,0 +1,215 @@
+@import "_fonts.sass"
+$color-item:      				#FCD153
+$color-white:     				#ffffff
+$color-black:							#020202
+=PD()
+	font-family: "Playfair Display" 
+=SSPB()
+	font-family: "Source Sans Pro"
+	font-weight: bold;
+	font-style: normal;
+=SSPL()
+	font-family: "Source Sans Pro"
+	font-weight: 200
+	font-style: normal
+=SSPR()
+	font-family: "Source Sans Pro"
+	font-weight: normal
+	font-style: normal
+*
+	font-size: 10px
+	outline: none
+section 
+	padding: 100px 50px 0px 50px
+.header-menu.active 
+	top: 0
+	left: 0
+	opacity: 0.9
+	visibility: visible
+	transition: opacity 0.5s
+	z-index: 1
+.header-burger.active:before 
+	transform: rotate(45deg)
+	top: 0px
+.header-burger.active:after 
+	transform: rotate(-45deg)
+	top: 0px
+.header-burger.active span
+	display: none
+h2 
+	+PD()
+	font-size: 3.4rem
+	padding-bottom: 70px
+h3 
+	+PD()
+	font-size: 1.8rem
+p 
+	+SSPL()
+	font-size: 1.6rem
+	line-height: 24px
+	letter-spacing: 0.5px
+.header
+	height: 100vh
+	position: relative
+	background: url('../img/header.jpeg') no-repeat 50% 50%
+	background-size: cover
+	padding: 50px
+	&-burger 
+		display: block
+		position: relative
+		margin-top: 10px
+		width: 30px
+		height: 30px
+		z-index: 4
+		margin-right: 10px
+		span 
+			position: absolute
+			left: 0
+			width: 100%
+			height: 2px
+			top: 0px
+			background-color: $color-white
+			transition: all 0.3s ease-out 0.1s
+		&:before, &:after 
+			content: ''
+			background-color: $color-white
+			position: absolute
+			width: 100%
+			height: 2px
+			left: 0
+			transition: all 0.3s ease-out 0.1s
+		&:before
+			top: 9px
+		&:after
+			height: 1.5px
+			top: -9px
+	&-menu 
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		overflow: auto
+		background-color: $color-item
+		padding: 20vh 0 0 0
+		opacity: 0
+		visibility: hidden
+		transition: opacity 0.5s, visibility 0s 0.5s
+	&-list 
+		text-align: center
+		padding: 0
+		li 
+			padding: 0
+			margin-top: 30px
+		a 
+			margin-top: 20px
+			font-size: 2.2rem
+			color: $color-white
+			+SSPR()
+			font-size: 2.4rem
+			opacity: 1
+	&-name 
+		color: $color-white
+		padding-bottom: 78vh
+	&-number
+		a
+			color: $color-white
+			+SSPL()	
+			font-size: 1.6rem
+		&_ico 
+			display: none
+			i 
+				color: $color-white
+	&-title
+		position: absolute
+		width: 100%
+		top: 40%
+		left: 0
+		right: 0
+		margin: auto
+		color: $color-white
+		p
+			font-size: 1.8rem
+			+SSPL()
+		h1
+			font-size: 5.4rem
+			+PD()
+	&-button 
+		button
+			margin-top: 60px
+			width: 200px
+			height: 40px
+			background-color: transparent
+			border: 2px solid $color-white
+			+SSPL()
+			font-size: 1.6rem
+			color: $color-white
+	&-icon
+		display: flex
+		justify-content: space-between
+		padding-bottom: 50px
+		.text-left-a
+			img 
+				max-width: 15px
+		.text-right
+			a, i
+				color: $color-white
+				font-size: 1.8rem
+.about 
+	&-image
+		width: 100%
+		height: 100%
+	img
+		max-width: 100%
+		max-height: 100%
+		position: relative
+	p 
+		margin-top: 20%
+.advantaged
+	&-slider
+		display: flex
+		justify-content: space-between
+		.slider-sl
+			text-align: center
+			img
+				width: 100px
+				height: 100px
+				margin: 0 auto
+				border-radius: 50%
+			h3 
+				padding: 27px 0
+			p 
+				margin: 0 auto
+				width: 250px
+@media (max-width: 1024px)
+	*
+		font-size: 9px
+	.header
+		&-number
+			p 
+				display: none
+			&_ico 
+				display: block
+	.about
+		p 
+			margin-top: 5%
+@media (max-width: 769px)
+	.about
+		p 
+			margin-top: 0	
+			margin-bottom: 20px
+@media (max-width: 589px)
+	*
+		font-size: 8px
+	section 
+		padding: 50px 20px 0px 20px
+	h2 
+		padding-bottom: 30px
+	.header
+		padding: 20px
+		&-title 
+			top: 33%
+			h1 
+				font-size: 4.8rem
+		&-name 
+			padding-bottom: 85vh
