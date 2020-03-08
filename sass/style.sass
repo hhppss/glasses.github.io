@@ -1,5 +1,5 @@
 @import "_fonts.sass"
-$color-item:      				#FCD153
+$color-item:      					#F9F98D
 $color-white:     				#ffffff
 $color-black:							#020202
 =PD()
@@ -275,14 +275,102 @@ p
 			font-size: 1.6rem
 			color: $color-black
 .map
+	margin: 20px 0
 	iframe
 		width: 100%
-		height: 100vh
+		height: 750px
 		position: absolute
+		margin-bottom: 150px
 	&-form
 		margin-top: 20%
-		background-color: red
+		background-color: $color-white
 		min-height: 500px
+		padding: 30px 40px
+		box-shadow: 0px 0px 20px #e5e5e5
+		h2
+			text-align: center
+			padding-bottom: 40px
+		form 
+			text-align: center
+		input 
+			display: block
+			width: 100%
+			height: 50px
+			margin-bottom: 20px
+			padding-left: 20px
+			+SSPL()
+			font-size: 16px
+			border: 1px solid $color-black
+		#text-box
+			height: 100px
+			padding-bottom: 10%
+			padding-left: 20px
+		button 
+			width: 200px
+			height: 40px
+			background-color: transparent
+			border: 2px solid $color-black
+			+SSPL()
+			font-size: 1.6rem
+			color: $color-black
+.map-mobile 
+	padding: 30px 0 0 0 
+	display: none
+	position: relative
+.brand 
+	h2 
+		margin-top: 100px
+	&-carousel 
+		width: 100%
+		display: flex
+		justify-content: space-around
+	&-item
+		text-align: center
+		padding-bottom: 40px
+		img
+			width: 180px
+			height: 180px
+			margin: 0 auto
+.contact 
+	&-img
+		img 
+			width: 100%
+			height: 100%
+	&-text 
+		margin-top: 20%
+		p
+			line-height: 30px
+		a 
+			color: $color-black
+			text-decoration: underline
+			font-size: 1.6rem
+.copy
+	background-color: $color-item
+	height: 80px
+	margin-top: 100px
+	padding: 40px 0px
+	p 
+		line-height: 0
+	a 
+		font-size: 1.6rem
+		color: $color-black
+		text-decoration: underline
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 1480px)
 	.delivery
@@ -322,11 +410,18 @@ p
 				height: 90%
 				max-width: 463px
 				float: left
+	.contact 
+		&-text 
+			margin-top: 10%
 @media (max-width: 993px)
 	.delivery
 		&-link 
 			text-align: center
 			padding-bottom: 50px
+	.contact 
+		&-text 
+			line-height: 20px
+			margin-top: 2%
 @media (max-width: 767px)
 	.slick-arrow.slick-prev
 		left: -3%		
@@ -359,8 +454,17 @@ p
 	.map 
 		iframe 
 			display: none
+			margin-bottom: 0
 		&-form
 			margin-top: 1%
+	iframe.map-mobile 
+		position: inherit
+		display: block
+		margin-top: 0px
+		max-height: 300px
+	.brand 
+		h2 
+			margin-top: 0px
 @media (max-width: 589px)
 	*
 		font-size: 8px
