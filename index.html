@@ -15,11 +15,15 @@
 		<meta name="keywords" content="ТЦ Авеста, Саранск, Торговый центр" />
     <title>ТЦ Авеста | Торговый центр Авеста в Саранске</title>
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 		<!-- Custom styles for this template -->
-		<link rel="stylesheet" href="css/fm.revealator.jquery.min.css">
+		<!-- <link rel="stylesheet" href="css/fm.revealator.jquery.min.css">
 		<script src="js/jquery-1.11.3.min.js"></script>
-		<script src="js/fm.revealator.jquery.js"></script>
+		<script src="js/fm.revealator.jquery.js"></script> -->
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 		<link href="css/style.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -36,7 +40,7 @@
 			<div class="container">
 				<div class="row">
 					<header class="col-md-2 col-3">
-						<div class="header-burger header-fixed revealator-slidedown revealator-once">
+						<div class="header-burger header-fixed">
 							<span></span>
 						</div>
 						<nav class="header-menu" id="menu">
@@ -65,12 +69,12 @@
 						</nav>
 					</header>
 					<div class="col-md-8 col-6">
-						<div class="header-name text-center revealator-slidedown revealator-once">
+						<div class="header-name text-center headline">
 							<h3>Название</h3>
 						</div>
 					</div>
 					<div class="col-md-2 col-3">
-						<div class="header-number text-right revealator-slidedown revealator-once">
+						<div class="header-number text-right headline">
 							<p><a href="tel:89999999999">8 (938) 832 82 32</a></p>
 							<div class="header-number_ico">
 								<i class="fa fa-phone" aria-hidden="true"></i>
@@ -80,20 +84,20 @@
 				</div>
 				<div class="row header-title">
 					<div class="col-md-12">
-						<div class="text-center revealator-slideup revealator-once">
+						<div class="text-center headline">
 							<p>В городе Лобня и Королёв</p>
 							<h1>Купить очки стало проще</h1>
 						</div>
-						<div class="header-button button text-center revealator-slideup revealator-once">
-							<button>Узнайте больше</button>
+						<div class="header-button button text-center headline">
+							<a href="#">Узнайте больше</a>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="header-icon" id="menu1">
-							<a href="#about" class="text-left-a"><img src="img/down.png" alt=""></a>
-							<a href="" class="text-right"><i class="fa fa-map-pin" aria-hidden="true"></i></a>
+							<a href="#about" class="text-left-a headline"><img src="img/down.png" alt=""></a>
+							<a href="" class="text-right headline"><i class="fa fa-map-pin" aria-hidden="true"></i></a>
 						</div>
 					</div>
 				</div>
@@ -102,18 +106,18 @@
 		<section class="about" id="about">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 text-center revealator-fade revealator-once">
+					<div class="col-md-12 text-center headline">
 						<h2>О нас</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-5">
-						<div class="about-text revealator-slideup revealator-once">
+						<div class="about-text headline">
 							<p>Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий проверки влечёт за собой интересный процесс внедрения модернизации направлений прогрессивного развития. Разнообразный и богатый опыт управление и развитие структуры в значительной степени обуславливает создание новых принципов формирования материально-технической и кадровой базы.</p>
 						</div>
 					</div>
 					<div class="col-md-7">
-						<div class="about-image text-right revealator-slideup revealator-once">
+						<div class="about-image text-right headline">
 							<img src="img/img.jpg" alt="">
 						</div>
 					</div>
@@ -123,13 +127,13 @@
 		<section class="advantaged">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 text-center revealator-fade revealator-once">
+					<div class="col-md-12 text-center headline">
 						<h2 >Наши преимущества</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<div class="advantaged-slider revealator-slideup revealator-once">
+						<div class="advantaged-slider headline">
 							<div class="slider-sl">
 								<img src="img/img.jpg" alt="">
 								<h3>Преимущество</h3>
@@ -160,19 +164,145 @@
 				</div>
 			</div>
 		</section>
-		<section class="recomendet">
+		<section class="recommendation">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 text-center revealator-fade revealator-once">
+					<div class="col-md-12 text-center headline">
 						<h2>Мы рекомендуем</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="recommendation-slider headline">
+							<div class="recommendation-slider__item headline">
+								<div class="row">
+									<div class="col-md-6">
+										<img src="img/glas3.png" alt="">
+									</div>
+									<div class="col-md-6">
+										<div class="slider-text text-center">
+											<h3>HERRLICHT</h3>
+											<p>
+												Бежевые деревянные очки в круглой оправе от herrlicht. Прилагается защитный чехол. 
+												<br>
+												<span>
+													Состав:
+												</span>
+												Наружный Материал: Дерево 100%
+											</p>
+											<h4>₽ 98 390.00</h4>
+											<a href="">Заказать очки</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="recommendation-slider__item">
+								<div class="row">
+									<div class="col-md-6">
+										<img src="img/glas1.png" alt="">
+									</div>
+									<div class="col-md-6">
+										<div class="slider-text text-center">
+											<h3>HERRLICHT</h3>
+											<p>
+												Бежевые деревянные очки в круглой оправе от herrlicht. Прилагается защитный чехол. 
+												<br>
+												<span>
+													Состав:
+												</span>
+												Наружный Материал: Дерево 100%
+											</p>
+											<h4>₽ 84 425.00</h4>
+											<a href="">Заказать очки</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="recommendation-slider__item">
+								<div class="row">
+									<div class="col-md-6">
+										<img src="img/glas2.png" alt="">
+									</div>
+									<div class="col-md-6">
+										<div class="slider-text text-center">
+											<h3>RAY BAN</h3>
+											<p>
+												Металлические унисекс авиаторы в металлической оправе. Прилагается защитный чехол. 
+												<br>
+												<span>
+													Состав:
+												</span>
+												Наружный Материал: Металл 100%
+											</p>
+											<h4>₽ 18 173.00</h4>
+											<a href="">Заказать очки</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="recommendation-slider__item">
+								<div class="row">
+									<div class="col-md-6">
+										<img src="img/glas4.png" alt="">
+									</div>
+									<div class="col-md-6">
+										<div class="slider-text text-center">
+											<h3>Guess</h3>
+											<p>
+												Очки-авиаторы из пластика и металла с двойным мостиком c ударопрочными линзами.
+												<br>
+												<span>
+													Состав:
+												</span>
+												Наружный Материал: Металл, пластик
+											</p>
+											<h4>₽ 9 990.00</h4>
+											<a href="">Заказать очки</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<section class="delivery">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2>Закажите доставку Ваших очков</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<div class="delivery-text">
+							<p>Для заказа Ваших очков, заполните форму снизу или позовните на номер 
+								8 (834) 737 23 23. После заказа мы приложим все усилия чтобы вовремя и качественно доставить Ваш заказ. 
+								<br><br>
+								*Доставка производится бесплатно по городу Королёв и Лобня. Доставка по России и МО обсуждается индивидуально.</p>
+							<div class="delivery-link">
+								<a href="">Заказать доставку</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d8445.80111509432!2d45.17561225370743!3d54.18547427538062!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1583666784361!5m2!1sru!2sru"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="map-form">
+							wed
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 		<script type="text/javascript" src="slick/slick.min.js"></script>
 		<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>

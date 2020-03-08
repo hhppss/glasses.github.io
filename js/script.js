@@ -23,6 +23,10 @@ $('.advantaged-slider').slick({
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
+  arrows: true,
+  dots: true,
+  prevArrow: '<img class="slick-prev" src="../img/prev.svg">',
+  nextArrow: '<img class="slick-next" src="../img/next.svg">',
   responsive: [
     {
       breakpoint: 769,
@@ -40,3 +44,16 @@ $('.advantaged-slider').slick({
     }
   ]
 });
+$('.recommendation-slider').slick({
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: true,
+  prevArrow: '<img class="slick-prev" src="../img/prev.svg">',
+  nextArrow: '<img class="slick-next" src="../img/next.svg">'
+});
+ScrollReveal().reveal('.headline');
