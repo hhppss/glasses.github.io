@@ -25,8 +25,8 @@ $('.advantaged-slider').slick({
   slidesToScroll: 1,
   arrows: true,
   dots: true,
-  prevArrow: '<img class="slick-prev" src="../img/prev.svg">',
-  nextArrow: '<img class="slick-next" src="../img/next.svg">',
+  prevArrow: '<img class="slick-prev" src="img/prev.svg">',
+  nextArrow: '<img class="slick-next" src="img/next.svg">',
   responsive: [
     {
       breakpoint: 769,
@@ -53,8 +53,8 @@ $('.recommendation-slider').slick({
   slidesToScroll: 1,
   arrows: true,
   dots: true,
-  prevArrow: '<img class="slick-prev" src="../img/prev.svg">',
-  nextArrow: '<img class="slick-next" src="../img/next.svg">'
+  prevArrow: '<img class="slick-prev" src="img/prev.svg">',
+  nextArrow: '<img class="slick-next" src="img/next.svg">'
 });
 ScrollReveal({ distance: '80px' });
 ScrollReveal().reveal('.headline', { origin: 'bottom' });
@@ -76,8 +76,8 @@ $('.brand-carousel').slick({
   dots: true,
   arrows: true,
   dots: true,
-  prevArrow: '<img class="slick-prev" src="../img/prev.svg">',
-  nextArrow: '<img class="slick-next" src="../img/next.svg">',
+  prevArrow: '<img class="slick-prev" src="img/prev.svg">',
+  nextArrow: '<img class="slick-next" src="img/next.svg">',
   responsive: [
     {
       breakpoint: 1025,
