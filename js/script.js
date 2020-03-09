@@ -25,8 +25,8 @@ $('.advantaged-slider').slick({
   slidesToScroll: 1,
   arrows: true,
   dots: true,
-  prevArrow: '<img class="slick-prev" src="img/prev.png">',
-  nextArrow: '<img class="slick-next" src="img/next.png">',
+  prevArrow: '<img class="slick-prev" src="img/prev.svg">',
+  nextArrow: '<img class="slick-next" src="img/next.svg">',
   responsive: [
     {
       breakpoint: 769,
