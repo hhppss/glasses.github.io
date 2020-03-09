@@ -12,7 +12,7 @@ $(document).ready(function() {
   })
 });
 $(document).ready(function(){
-  $("#menu ,#menu1, #menu2").on("click","a", function (event) {
+  $("#menu ,#menu1, #menu2, #menu3, #menu4, #menu5").on("click","a", function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
     top = $(id).offset().top;
@@ -25,8 +25,8 @@ $('.advantaged-slider').slick({
   slidesToScroll: 1,
   arrows: true,
   dots: true,
-  prevArrow: '<img class="slick-prev" src="img/prev.svg">',
-  nextArrow: '<img class="slick-next" src="img/next.svg">',
+  prevArrow: '<img class="slick-prev" src="../img/prev.svg">',
+  nextArrow: '<img class="slick-next" src="../img/next.svg">',
   responsive: [
     {
       breakpoint: 769,
@@ -53,16 +53,17 @@ $('.recommendation-slider').slick({
   slidesToScroll: 1,
   arrows: true,
   dots: true,
-  prevArrow: '<img class="slick-prev" src="img/prev.svg">',
-  nextArrow: '<img class="slick-next" src="img/next.svg">'
+  prevArrow: '<img class="slick-prev" src="../img/prev.svg">',
+  nextArrow: '<img class="slick-next" src="../img/next.svg">'
 });
-ScrollReveal({ distance: '60px' });
+ScrollReveal({ distance: '80px' });
 ScrollReveal().reveal('.headline', { origin: 'bottom' });
 ScrollReveal().reveal('.ani-input1', { delay: 300, origin: 'bottom' });
 ScrollReveal().reveal('.ani-input2', { delay: 600, origin: 'bottom' });
 ScrollReveal().reveal('.ani-input3', { delay: 900, origin: 'bottom' });
 ScrollReveal().reveal('.ani-input4', { delay: 1200, origin: 'bottom' });
 ScrollReveal().reveal('.ani-input5', { delay: 1500, origin: 'bottom' });
+ScrollReveal().reveal('.headlinez', { delay: 600, origin: 'right'});
 $(function(){
   $("#phone_mask").mask("8(999) 999-9999");
 });
@@ -73,7 +74,10 @@ $('.brand-carousel').slick({
   autoplay: true,
   autoplaySpeed: 2000,
   dots: true,
-  arrows: false,
+  arrows: true,
+  dots: true,
+  prevArrow: '<img class="slick-prev" src="../img/prev.svg">',
+  nextArrow: '<img class="slick-next" src="../img/next.svg">',
   responsive: [
     {
       breakpoint: 1025,

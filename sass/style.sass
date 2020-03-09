@@ -1,5 +1,5 @@
 @import "_fonts.sass"
-$color-item:      					#F9F98D
+$color-item:      					#ffc203
 $color-white:     				#ffffff
 $color-black:							#020202
 =PD()
@@ -86,6 +86,8 @@ p
 	background: url('../img/header.jpeg') no-repeat 50% 50%
 	background-size: cover
 	padding: 50px
+	i 
+		font-size: 1.2em
 	&-burger 
 		display: block
 		position: relative
@@ -140,6 +142,7 @@ p
 			+SSPR()
 			font-size: 2.4rem
 			opacity: 1
+			cursor: pointer
 	&-name 
 		color: $color-white
 		padding-bottom: 78vh
@@ -188,15 +191,16 @@ p
 		.text-right
 			a, i
 				color: $color-white
-				font-size: 1.8rem
+				font-size: 2rem
 .about 
 	&-image
+		margin: 0 auto
+	img
+		max-width: 615px
 		width: 100%
 		height: 100%
-	img
-		max-width: 100%
-		max-height: 100%
 		position: relative
+		text-center: center
 	p 
 		margin-top: 20%
 .advantaged
@@ -328,11 +332,12 @@ p
 		text-align: center
 		padding-bottom: 40px
 		img
-			width: 180px
+			width: auto
 			height: 180px
 			margin: 0 auto
 .contact 
 	&-img
+		margin-top: 20px
 		img 
 			width: 100%
 			height: 100%
@@ -465,6 +470,8 @@ p
 	.brand 
 		h2 
 			margin-top: 0px
+	.copy
+		margin-top: 20px
 @media (max-width: 589px)
 	*
 		font-size: 8px
