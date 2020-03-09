@@ -25,8 +25,8 @@ $('.advantaged-slider').slick({
   slidesToScroll: 1,
   arrows: true,
   dots: true,
-  prevArrow: '<img class="slick-prev" src="../img/prev.svg">',
-  nextArrow: '<img class="slick-next" src="../img/next.svg">',
+  prevArrow: '<img class="slick-prev" src="../img/prev.png">',
+  nextArrow: '<img class="slick-next" src="../img/next.png">',
   responsive: [
     {
       breakpoint: 769,
@@ -53,8 +53,8 @@ $('.recommendation-slider').slick({
   slidesToScroll: 1,
   arrows: true,
   dots: true,
-  prevArrow: '<img class="slick-prev" src="../img/prev.svg">',
-  nextArrow: '<img class="slick-next" src="../img/next.svg">'
+  prevArrow: '<img class="slick-prev" src="img/prev.svg">',
+  nextArrow: '<img class="slick-next" src="/img/next.svg">'
 });
 ScrollReveal({ distance: '60px' });
 ScrollReveal().reveal('.headline', { origin: 'bottom' });
